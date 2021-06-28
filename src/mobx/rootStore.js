@@ -1,8 +1,8 @@
-import DetailStore from "./detailStore";
+import DetailStore from './detailStore';
 
 class RootStore {
-  constructor() {
-    this.detailStore = new DetailStore();
-  }
+    constructor() {
+        this.detailStore = new DetailStore();
+    }
 }
 export default new RootStore();
