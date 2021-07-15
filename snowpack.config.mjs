@@ -7,7 +7,7 @@ export default {
         // src: path.resolve(__dirname, "./src"),
         /* ... */
     },
-    plugins: ['snowpack-plugin-less', '@snowpack/plugin-babel'],
+    plugins: ['snowpack-plugin-less'],
     routes: [
         /* Enable an SPA Fallback in development: */
         // {"match": "routes", "src": ".*", "dest": "/index.html"},
