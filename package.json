@@ -2,7 +2,9 @@
     "scripts": {
         "start": "snowpack dev",
         "build": "snowpack build",
-        "test": "echo \"This template does not include a test runner by default.\" && exit 1"
+        "test": "echo \"This template does not include a test runner by default.\" && exit 1",
+        "lint:jsx": "eslint --ext .jsx src && eslint --ext .js src",
+        "lint:css": "stylelint --aei .less .css src"
     },
     "devDependencies": {
         "eslint": "^7.29.0",
