@@ -3,10 +3,21 @@
         "start": "snowpack dev",
         "build": "snowpack build",
         "test": "echo \"This template does not include a test runner by default.\" && exit 1",
-        "lint:jsx": "eslint --ext .jsx src && eslint --ext .js src",
+        "lint:jsx": "eslint --ext .jsx,.js src",
         "lint:css": "stylelint --aei .less .css src"
     },
+    "lint-staged": {
+        "*.{js,jsx}": [
+            "eslint --fix",
+            "prettier --write"
+        ],
+        "*.{css,less}": [
+            "stylelint --fix",
+            "prettier --write"
+        ]
+    },
     "devDependencies": {
+        "antd": "^4.16.8",
         "eslint": "^7.29.0",
         "eslint-config-prettier": "^8.3.0",
         "eslint-config-standard": "^16.0.3",

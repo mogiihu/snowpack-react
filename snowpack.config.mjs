@@ -17,7 +17,7 @@ export default {
         // "bundle": true,
     },
     packageOptions: {
-        /* ... */
+        // namedExports: ['antd']
     },
     devOptions: {
         /* ... */
