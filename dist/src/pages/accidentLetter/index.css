@@ -1,0 +1,80 @@
+.file-con {
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 874px;
+  color: #000;
+}
+.file-con .file-con-img {
+  width: auto;
+  height: auto;
+}
+.file-con .file-title {
+  margin-top: 14px;
+  margin-bottom: 2px;
+  font-size: 30px;
+  font-weight: 700;
+}
+.file-con .file-grid {
+  width: 816px;
+  font-size: 20px;
+  border: 1px solid #868686;
+  border-top: none;
+}
+.file-con .file-col {
+  display: flex;
+  align-items: stretch;
+  border-top: 1px solid #868686;
+}
+.file-con .file-col .ant-col {
+  min-height: 50px;
+  padding-left: 8px;
+  padding-top: 4px;
+  border-left: 1px solid #868686;
+  word-break: break-all;
+}
+.file-con .file-col .ant-col:first-child {
+  border-left: none;
+}
+.file-con .file-col2 .file-col-title {
+  width: 20px;
+}
+.file-con .file-col2 .file-col-con1 {
+  min-height: 300px;
+}
+.file-con .file-col2 .file-col-con2 {
+  min-height: 250px;
+}
+.file-con .file-col2 .file-col-notice {
+  padding-left: 20px;
+}
+.file-con .file-sign {
+  display: flex;
+  width: 816px;
+  margin-top: 10px;
+  font-size: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.file-con .file-sign-pics {
+  margin-top: 20px;
+  flex-shrink: 0;
+  width: 390px;
+  height: 200px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+.file-con .sign-name {
+  font-weight: 700;
+  margin: 10px;
+}
+.file-con .sign-img {
+  width: 250px;
+  margin-left: 10px;
+}
+.file-con .file-time {
+  margin-top: 20px;
+  text-align: right;
+  font-size: 20px;
+}

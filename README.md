@@ -1,24 +1,34 @@
-# New Project
+# h5 项目
 
-> ✨ Bootstrapped with Create Snowpack App (CSA).
+---
 
-## Available Scripts
+## 启动
 
-### npm start
+```shell
+git clone http://52.80.155.217:8100/QuickView/commonVideoClient.git
 
-Runs the app in the development mode.
-Open http://localhost:8080 to view it in the browser.
+cd commonVideoClient
 
-The page will reload if you make edits.
-You will also see any lint errors in the console.
+git checkout h5
 
-### npm run build
+# 不要用 cnpm
+npm install
 
-Builds a static copy of your site to the `build/` folder.
-Your app is ready to be deployed!
+npm start
+```
 
-**For the best production performance:** Add a build bundler plugin like [@snowpack/plugin-webpack](https://github.com/snowpackjs/snowpack/tree/main/plugins/plugin-webpack) or [snowpack-plugin-rollup-bundle](https://github.com/ParamagicDev/snowpack-plugin-rollup-bundle) to your `snowpack.config.mjs` config file.
+## 测试部署
 
-### Q: What about Eject?
+```
+$ npm run build:test
+```
 
-No eject needed! Snowpack guarantees zero lock-in, and CSA strives for the same.
+## 生产部署
+
+```
+$ npm run build:prod
+```
+
+## 注意
+
+❗️ snowpack 项目中不要使用 cnpm 装包，启动时会 snowpack 会扫描不到该包。

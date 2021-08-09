@@ -1,0 +1,73 @@
+.survey-file {
+  max-width: 750px;
+  width: 100%;
+  border-top: 0.3rem solid #0168aa;
+  padding: 2rem;
+  color: #3e4d61;
+  font-size: 1.4rem;
+}
+.survey-file .file-block {
+  margin-top: 1rem;
+}
+.survey-file .file-block:first-child {
+  margin-top: 0;
+}
+.survey-file .file-block-con {
+  margin-top: 0.5rem;
+  border-radius: 0.15rem;
+  border: 0.1rem solid #586b85;
+  padding: 1.2rem;
+  line-height: 2rem;
+  color: #3e4d61;
+}
+.survey-file .file-con-title {
+  color: #3e4d61;
+  font-weight: 700;
+}
+.survey-file .file-col {
+  display: flex;
+  flex-direction: row;
+}
+.survey-file .con-left {
+  flex-shrink: 0;
+}
+.survey-file .con-right {
+  margin-left: 0.3rem;
+  flex: 1;
+  text-align: right;
+  word-break: break-all;
+}
+.survey-file .signed-title {
+  height: 1.7rem;
+  color: #0168aa;
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1.3rem;
+}
+.survey-file .file-sign {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.survey-file .file-sign-pics {
+  margin-top: 1.2rem;
+  margin-right: 1.2rem;
+  width: 13rem;
+  min-height: 9rem;
+  border-radius: 0.15rem;
+  border: 0.1rem solid #586b85;
+}
+.survey-file .sign-name {
+  margin-top: 0.2rem;
+  margin-left: 0.5rem;
+}
+.survey-file .sign-img {
+  width: 10.5rem;
+}
+.survey-file .file-bt-text {
+  margin-top: 0.2em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}

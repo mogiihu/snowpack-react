@@ -1,18 +1,37 @@
 module.exports = {
+    extends: [
+        'eslint:recommended',
+        'plugin:react/recommended',
+        'plugin:react-hooks/recommended',
+        'standard',
+        'prettier'
+    ],
     env: {
         browser: true,
-        es2021: true
+        commonjs: true,
+        es6: true
     },
-    extends: ['plugin:react/recommended', 'standard', 'prettier'],
+    globals: {
+        __SNOWPACK_ENV__: true
+    },
+    parser: '@typescript-eslint/parser',
     parserOptions: {
         ecmaFeatures: {
-            jsx: true
+            jsx: true,
+            modules: true
         },
-        ecmaVersion: 12,
-        sourceType: 'module'
+        sourceType: 'module',
+        ecmaVersion: 6
     },
-    plugins: ['react'],
+    plugins: ['react', '@typescript-eslint'],
+    settings: {
+        'import/ignore': ['node_modules'],
+        react: {
+            version: 'latest'
+        }
+    },
     rules: {
+        eqeqeq: 0,
         quotes: [2, 'single'],
         'no-console': 0,
         'no-debugger': 1,
@@ -28,6 +47,7 @@ module.exports = {
                 args: 'after-used'
             }
         ],
+        'no-prototype-builtins': 0,
         'no-case-declarations': 0,
         'no-underscore-dangle': 0,
         'no-alert': 2,
@@ -49,10 +69,10 @@ module.exports = {
         'no-undef': 2,
         'no-return-assign': 0,
         'no-script-url': 2,
-        'no-use-before-define': 2,
+        'no-use-before-define': 0,
         'no-extra-boolean-cast': 0,
         'no-unreachable': 1,
-        'comma-dangle': 2,
+        'comma-dangle': 0,
         'no-mixed-spaces-and-tabs': 2,
         'prefer-arrow-callback': 0,
         'arrow-parens': 0,
@@ -94,7 +114,7 @@ module.exports = {
         'react/no-unknown-property': 2,
         'react/prefer-es6-class': 2,
         'react/prop-types': 0,
-        'react/react-in-jsx-scope': 2,
+        'react/react-in-jsx-scope': 0,
         'react/self-closing-comp': 0,
         'react/sort-comp': 0,
         'react/no-array-index-key': 0,
