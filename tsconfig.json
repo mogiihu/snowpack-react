@@ -1,0 +1,37 @@
+{
+    "compilerOptions": {
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "target": "ESNext",
+        "allowSyntheticDefaultImports": true,
+        "strict": true,
+        "forceConsistentCasingInFileNames": true,
+        "allowJs": true,
+        "outDir": "./dist/",
+        "esModuleInterop": true,
+        "noImplicitAny": false,
+        "sourceMap": true,
+        "module": "esnext",
+        "moduleResolution": "node",
+        "isolatedModules": true,
+        "importHelpers": true,
+        "lib": ["esnext", "dom", "dom.iterable"],
+        "skipLibCheck": false,
+        "jsx": "react",
+        "baseUrl": "./src",
+        "paths": {
+            "@src/*": ["*"],
+            "@assets/*": ["assets/*"],
+            "@components/*": ["components/*"],
+            "@pages/*": ["pages/*"],
+            "@utils/*": ["utils/*"],
+            "@servers/*": ["servers/*"],
+            "@actions/*": ["actions/*"],
+            "@config": ["config"],
+            "@routeConfig": ["routeConfig"],
+            "@request": ["request"]
+        }
+    },
+    "include": ["./src/**/*", "./declaration.d.ts"],
+    "exclude": ["node_modules"]
+}
